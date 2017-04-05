@@ -3,7 +3,7 @@ var projects = {
     "projects": [
         {
             "title": "Portfolio Website",
-            "description": "This website was my first try at building a functional website, with the goal of displaying my completed and future projects",
+            "description": "This very page, mattdobie.com, is my first attempt at building a functional website. Its purpose is to to display my completed and future development projects",
             "url": "index.html",
             "image": "images/portfoliowebsite.jpg"
         },
@@ -15,7 +15,7 @@ var projects = {
         },
         {
             "title": "Traffic Bugs",
-            "description": "This game was developed using free course material from Udacity, and demonstrates my skills at Object-Oriented Javascript",
+            "description": "This game was developed with help from some free course material from Udacity, and demonstrates my ability to program Object-Oriented JavaScript",
             "url": "portfolio/trafficbugs.html",
             "image": "images/trafficbugs.jpg"
         },
