@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Matt Dobie</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#">matt<em>dobie</em></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">home</a></li>
+                        <li><a href="about.html">about me</a></li>
+                        <li><a href="portfolio.html">portfolio</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <section id="welcome" class="container-fluid">
+            <img src="images/background.jpg" alt="" class="img-responsive">
+            <div class="textbox">
+                <h1>hi.</h1>
+                <p>
+                    &lt;p&gt; thanks for turning up. here you can<br>
+                    take a look at what I've been up to recently &lt;/p&gt;
+                </p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="container">
+             <div class="row">
+                <div class="col-sm-12">
+                    <h2>featured work</h2>
+                </div>
+            </div>
+                <!-- Projects go here -->
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&#169; 2017 Matthew Dobie</p>
+            </div>
+        </footer>
+
+        <!-- Contains helpers for project builder -->
+        <script src="js/helper.js"></script>
+        <script src="js/scripts.js"></script>
+
+        <!--
+        Builds out the featured project section
+        dynamically when this website, index.html, is opened.
+        -->
+        <script src="js/projectBuilder.js"></script>
+        <script>projects.displayFeatured();</script>
+    </body>
+</html>
