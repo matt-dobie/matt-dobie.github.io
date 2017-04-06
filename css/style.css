@@ -349,7 +349,6 @@ form {
 
 #nogame {
   display: none;
-  margin: 100px 10%;
 }
 
 #gameHeader {
@@ -406,5 +405,13 @@ form {
   }
   #nogame {
     display: block;
+  }
+  #nogame h2 {
+    padding-top: 50px;
+  }
+  #nogame h3 {
+    padding: 50px;
+    padding-top: 0;
+    padding-bottom: 100px;
   }
 }
