@@ -381,12 +381,6 @@ form {
     margin: 30px 10%;
     min-height: 0;
   }
-  #game {
-    display: none;
-  }
-  #nogame {
-    display: block;
-  }
 }
 
 /* Small devices (tablets, 768px and up to 991px) */
@@ -403,5 +397,14 @@ form {
   #facts {
     text-align: center;
     padding: 50px 20%;
+  }
+}
+
+@media screen and (max-device-width: 1024px) {
+  #game {
+    display: none;
+  }
+  #nogame {
+    display: block;
   }
 }

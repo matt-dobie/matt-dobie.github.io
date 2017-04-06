@@ -406,14 +406,6 @@ form {
         margin: 30px 10%;
         min-height: 0;
     }
-
-    #game {
-        display: none;
-    }
-
-    #nogame {
-        display: block;
-    }
 }
 
 
@@ -434,5 +426,16 @@ form {
     #facts {
         text-align: center;
         padding: 50px 20%;
+    }
+}
+
+// For any smaller than a desktop (under 1024px)
+@media screen and (max-device-width: 1024px) {
+    #game {
+        display: none;
+    }
+
+    #nogame {
+        display: block;
     }
 }
