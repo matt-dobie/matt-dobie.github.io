@@ -149,12 +149,13 @@ form {
     padding-bottom: 0;
 
     h2 {
-        padding-top: 5%;
         font-weight: bolder;
     }
     
     p {
         font-weight: lighter;
+        padding-bottom: 50px;
+        padding-right: 50px;
     }
 }
 
@@ -427,7 +428,7 @@ form {
     }
 
     #about img {
-        padding-top: 60px;
+        max-width: 100%;
     }
 
     #facts {
@@ -435,4 +436,3 @@ form {
         padding: 50px 20%;
     }
 }
-

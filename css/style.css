@@ -131,12 +131,13 @@ form {
 }
 
 #about h2 {
-  padding-top: 5%;
   font-weight: bolder;
 }
 
 #about p {
   font-weight: lighter;
+  padding-bottom: 50px;
+  padding-right: 50px;
 }
 
 /* Chart style */
@@ -397,7 +398,7 @@ form {
     font-size: 16px;
   }
   #about img {
-    padding-top: 60px;
+    max-width: 100%;
   }
   #facts {
     text-align: center;
