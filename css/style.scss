@@ -1,451 +1,253 @@
-/* Variables */
-$background: #fcfcfc;
-$footer-color: #222;
-
-/* Chart colours */
-$chart-label-color: #eaeaea;
-$orange: #ff9e2c;
-$gray: #999;
-$grayLight: lighten($gray, 20%);
-$teal: #4ecdc4;
-$salmon: #ff6b6b;
-$lime: #97f464;
-$peach: lighten($orange, 20%);
-$grape: #ab64f4;
-
-
-/* Overall Body style */
-html {
-    min-height: 100%;
-    position: relative;
+/* General body styling */
+body, html {
+  position: relative;
+  height: 100%;
+  min-width: 330px;
+  margin: 0;
+  font: 400 15px/1.6 "Lato", sans-serif;
+  color: #555;
+  background-color: #222;
 }
 
-body {
-    text-align: center;
-    background-color: $background;
-    margin-bottom: 60px;
-}
-
-h1 {
-    font-size: 100px;
-}
-
+/* Some other general styles */
 h2 {
-    font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.padded {
+  padding: 0 30px 60px 30px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.border {
+  background-color: #222;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text-box {
+  text-align: justify;
+}
+
+.content {
+  padding-top: 80px;
+  background-color: white;
+}
+
+/* Extra style for Bootstrap nav */
+nav {
+  letter-spacing: 1px;
+  background-color: #222;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+nav .container {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.navbar-brand {
+  font-size: 20px;
+}
+
+em {
+  font-weight: lighter;
+}
+
+/* Style for fixed background images */
+.bgimg-1, .bgimg-2 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("../images/b1_op8.jpg");
+  min-height: 500px;
+}
+
+.bgimg-2 {
+  background-image: url("../images/b2_op6.jpg");
+  min-height: 400px;
+}
+
+/* Style for portfolio section */
+#portfolio {
+  padding-bottom: 50px;
+}
+
+.bgimg-2 .col-md-6 {
+  margin-bottom: 40px;
+}
+
+.heading {
+  text-align: center;
+  margin: 80px 0 50px 0;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.project {
+  text-align: center;
+  color: #fff;
+  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.project .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 h3 {
-    font-size: 26px;
+  padding-top: 20px;
+  letter-spacing: 2px;
 }
 
-.box {
-    padding: 60px 10%;
-    text-align: left;
+.project p {
+  font-style: italic;
+  letter-spacing: 2px;
 }
 
-.white {
-    background-color: white;
-    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  opacity: 1;
+  transition: .3s ease;
+  background-color: #222;
+  background-color: rgba(2, 2, 2, 0.8);
 }
 
-form {
-    margin-top: 30px;
+.project:hover .overlay {
+  opacity: 1;
 }
 
-
-/* Navbar style */
-.navbar {
-      margin: 0;
-    }
-
-.navbar-brand {
-    font-size: 35px;
+/* Style for contact section */
+.social {
+  padding: 20px 0 60px 0;
 }
 
-.navbar-brand em {
-    font-weight: lighter;
+.social a {
+  text-decoration: none;
+  color: white;
 }
 
-
-/* Footer style */
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-color: $footer-color;
-    color: white; 
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-
-/* Welcome banner style */
-#welcome {
-     position: relative;
-     display: inline-block;
-     padding: 0;
-     background-color: white;
-
-    .textbox {
-        text-align: center;
-        position: absolute;
-        width: 100%;
-        top: 15%;
-        color: black; 
-    }
-
-    p {
-        font-size: 20px;
-        font-weight: 200;
-    }
-
-    img {
-        opacity: 0.15;
-        min-height: 200px;
-    }
+.fa:hover {
+  opacity: 0.7;
 }
 
-
-/* Featured project style */
-#portfolio {
-    margin-top: 40px;
-    margin-bottom: 100px;
-
-    h2 {
-        padding: 10px 0;
-    }
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
-/* Project style */
-.project {
-    padding: 20px;
-    margin: 20px auto;
-    min-height: 440px;
-    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    -o-transition: opacity 0.3s ease-out;
-    -moz-transition: opacity 0.3s ease-out;
-    -webkit-transition: opacity 0.3s ease-out;
-    transition: opacity 0.3s ease-out;
-
-    img {
-        margin-bottom: 30px;
-    }
-
-    p {
-        margin-bottom: 20px;
-        padding: 0 5%;
-        font-weight: lighter;
-    }
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
 }
 
-
-/* About style */
-#about {
-    font-size: larger;
-    padding-bottom: 0;
-
-    h2 {
-        font-weight: bolder;
-    }
-    
-    p {
-        font-weight: lighter;
-        padding-bottom: 50px;
-        padding-right: 50px;
-    }
+/* Github */
+.fa-github {
+  background: black;
+  color: white;
 }
 
+/* LinkedIn */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
 
-/* Chart style */
-  
-// Media Queries
-@mixin mq($size) {
-  @if $size == large {
-    @media screen and (min-width: 768px) { @content; }
+/* Footer styling */
+footer {
+  background-color: #222;
+  min-height: 20px;
+  margin: 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 15px;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2 {
+    background-attachment: scroll;
   }
 }
 
-// Chart styling
-#chart {
-    margin-top: 8%;
-    display: block;
-    padding: 0;
-    padding-left: 10%;
-    padding-right: 10%;
+/* Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap */
 
-    h2 {
-        padding: 30px;
-    }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  nav .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.chart {
-    padding: 0;
-    width: 100%;
-    margin-bottom: 60px;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .overlay {
+    opacity: 0;
+  }
 
-    @include mq(large) {
-        list-style: none;
-        height: 425px;
-        position: relative;
-        //background: url(http://cl.ly/QSpc/bg-chart.png) right top repeat-x;
-	    margin: 0;
-    }
-  
-    li {
-        display: block;
-        height: 125px;
-        margin: 5px;
-        padding: 5px;
-        position: relative;
-        text-align: center;
-        border-radius: 6px;
-        box-shadow: (inset 0 1px 0 0 rgba(255,255,255,.6));
-        
-        @include mq(large) {
-            display: inline-block;
-            width: 14%;
-            height: 100%;
-            margin: 0 2% 0 0;
-            padding: 0;
-            vertical-align: bottom;
-            border-bottom: #EEE solid 1px;
-            border-radius: (4px 4px 0 0);
-        }
-    }
-    
-    .axis { 
-        display: none;
+  nav {
+    background-color: #222;
+    background-color: rgba(2, 2, 2, 0);
+    box-shadow: none;
+  }
 
-        @include mq(large) {
-            display: inline-block;
-            background: $background;
-            height: 425px;
-            border-right: #DDD solid 1px;
-        }
-    }
-
-    .label {
-        @include mq(large) {
-            display: block;
-            padding: 0;
-            color: #333;
-            font-size: 16px;
-            font-size: 1.6rem;
-            font-weight: lighter;
-            margin: -8px 0 76px 0;
-        }
-    }
-  
-    .percent {
-        opacity: .4;
-        width: 100%;
-        font-size: 40px;
-
-        span {
-            font-size: 20px;
-        }
-        
-        @include mq(large) {
-            position: absolute;
-        }
-    }
-    
-    .skill {
-        font-weight: 800;
-        opacity: .5;
-        overflow: hidden;
-        text-transform: uppercase;
-        width: 100%;
-        
-        @include mq(large) {
-            bottom: 20px;
-            position: absolute;
-        }
-    }
-    
-    .teal { 
-        background: $teal;
-        border: 1px solid $teal;
-        background-image: -webkit-linear-gradient(lighten($teal, 10%), $teal 70%);
-        background-image: -moz-linear-gradient(lighten($teal, 10%), $teal 70%);
-        background-image: -o-linear-gradient(lighten($teal, 10%), $teal 70%);
-        background-image: linear-gradient(lighten($teal, 10%), $teal 70%);
-    }
-
-    .salmon { 
-        background: $salmon;
-        border: 1px solid $salmon;
-        background-image: -webkit-linear-gradient(lighten($salmon, 10%), $salmon 70%);
-        background-image: -moz-linear-gradient(lighten($salmon, 10%), $salmon 70%);
-        background-image: -o-linear-gradient(lighten($salmon, 10%), $salmon 70%);
-        background-image: linear-gradient(lighten($salmon, 10%), $salmon 70%);
-    }
-    
-    .lime { 
-        background: $lime;
-        border: 1px solid $lime;
-        background-image: -webkit-linear-gradient(lighten($lime, 10%), $lime 70%);
-        background-image: -moz-linear-gradient(lighten($lime, 10%), $lime 70%);
-        background-image: -o-linear-gradient(lighten($lime, 10%), $lime 70%);
-        background-image: linear-gradient(lighten($lime, 10%), $lime 70%);
-    }
-
-    .peach { 
-        background: $peach;
-        border: 1px solid $peach;
-        background-image: -webkit-linear-gradient(lighten($peach, 10%), $peach 70%);
-        background-image: -moz-linear-gradient(lighten($peach, 10%), $peach 70%);
-        background-image: -o-linear-gradient(lighten($peach, 10%), $peach 70%);
-        background-image: linear-gradient(lighten($peach, 10%), $peach 70%);
-    }
-    
-    .grape { 
-        background: $grape;
-        border: 1px solid $grape;
-        background-image: -webkit-linear-gradient(lighten($grape, 10%), $grape 70%);
-        background-image: -moz-linear-gradient(lighten($grape, 10%), $grape 70%);
-        background-image: -o-linear-gradient(lighten($grape, 10%), $grape 70%);
-        background-image: linear-gradient(lighten($grape, 10%), $grape 70%);
-    }
+  .fixed-top.scrolled {
+    background-color: #222 !important;
+    transition: background-color 200ms linear;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+  }
 }
 
-
-/* Facts style */
-#facts {
-    padding: 100px 20%;
-    border-top: #EEE solid 1px;
-
-    h2 {
-        padding-top: 2%;
-    }
-
-    ul {
-        list-style: none;
-        padding: 10px;
-        margin-bottom: 50px;
-        font-size: 24px;
-        font-weight: lighter;
-
-        li {
-            padding: 5px;
-        }
-    }
-
-    img {
-        max-height: 500px;
-    }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h2 {
+    margin-top: 20px;
+  }
 }
 
-
-/* Contact style */
-#contact {
-    font-size: larger;
-
-    h2 {
-        padding-top: 10%;
-        font-weight: bolder;
-    }
-
-    p {
-        font-weight: lighter;
-    }
-
-    img {
-        max-height: 400px;
-    }
+/* Extra large devices (large desktops, 1200px and up) 
+@media (min-width: 1200px) {
+  ...;
 }
-
-
-/* Game */
-#game {
-    margin-top: 70px;
-    margin-bottom: 120px;
-
-    h1 {
-        font-size: 60px;
-    }
-}
-
-#nogame {
-    display: none;
-}
-
-#gameHeader {
-    max-width: 500px;
-}
-
-#start {
-    margin: 20px;
-}
-
-#score {
-    font-size: larger;
-    font-weight: bolder;
-    float: left;
-    margin-top: 50px;
-}
-
-#reset {
-    float: right;
-    margin-top: 50px;
-}
-
-
-/* Extra small devices (phones, up to 767px) */
-@media screen and (max-width: 767px) {
-    #welcome .textbox {
-        top: 5%;
-    }
-    
-    .project {
-        margin: 30px 10%;
-        min-height: 0;
-    }
-}
-
-
-/* Small devices (tablets, 768px and up to 991px) */
-@media screen and (max-width: 991px) {
-    #welcome h1 {
-        font-size: 60px;
-    }
-
-    #welcome p {
-        font-size: 16px;
-    }
-
-    #about img {
-        max-width: 100%;
-    }
-
-    #facts {
-        text-align: center;
-        padding: 50px 20%;
-    }
-}
-
-// For any smaller than a desktop (under 1024px)
-@media screen and (max-device-width: 1024px) {
-    #game {
-        display: none;
-    }
-
-    #nogame {
-        display: block;
-
-        h2 {
-            padding-top: 50px;
-        }
-
-        h3 {
-            padding: 50px;
-            padding-top: 0;
-            padding-bottom: 100px;
-        }
-
-    }
-}
+*/
