@@ -1,10 +1,10 @@
 $(document).ready(function() {
   
   // Add scrollspy to <body>
-  $('body').scrollspy({target: "#navbarMain", offset: 100});
+  $('body').scrollspy({target: "#nav", offset: 100});
 
   // Add smooth scrolling on all links inside the navbar
-  $("#navbarMain a").on('click', function(event) {
+  $("#nav a").on('click', function(event) {
 
     // Make sure link has a hash value
     if (this.hash !== "") {
