@@ -1,33 +1,32 @@
-$(document).ready(function() {
-  
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: "#nav", offset: 100});
 
-  // Add smooth scrolling on all links inside the navbar
-  $("#nav a").on('click', function(event) {
+(function($) {
+    "use strict"; // Start of use strict
 
-    // Make sure link has a hash value
-    if (this.hash !== "") {
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
 
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 51
+    });
 
-      // Store hash
-      var hash = this.hash;
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function(){ 
+            $('.navbar-toggle:visible').click();
+    });
 
-      // Animate with jQuery
-      $('html, body').animate({scrollTop: $(hash).offset().top}, 1000, function(){
+    // Offset for Main Navigation
+    $('#mainNav').affix({
+        offset: {
+            top: 100
+        }
+    })
 
-        // Add hash (#) to URL when done scrolling
-        window.location.hash = hash;
-      });
-    }
-  });
-  
-  // Fill nav background on scroll
-  $(document).scroll(function () {
-	  var $nav = $(".fixed-top");
-	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-	});
-
-});
+})(jQuery); // End of use strict
