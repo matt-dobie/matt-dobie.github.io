@@ -1,0 +1,113 @@
+body {
+  position: relative;
+  background-color: #667484;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+
+#calculator {
+  margin: 50px auto;
+  padding-top: 10px;
+  background-color: #1b1f23;
+  width: 300px;
+  height: 450px;
+  border: 2px solid #131619;
+  border-radius: 20px;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #131619;
+}
+
+#calculator h1 {
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#calculator #display {
+  width: 85%;
+  height: 65px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  border: 2px solid #b4b39d;
+  border-radius: 6px;
+  background-color: #c3c2ab;
+}
+
+#calculator #display p {
+  text-align: right;
+  margin: 10px 10px 0 auto;
+}
+
+#calculator #display p#answer {
+  font-size: 35px;
+}
+
+#calculator #display p#history {
+  color: #8b8b7b;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-right: 15px;
+}
+
+#calculator #grid {
+  margin: 23px 10px;
+  display: inline-block;
+  width: 240px;
+}
+
+#calculator #grid button {
+  width: 50px;
+  height: 50px;
+  margin: 3px 3px;
+  border-radius: 6px;
+  font-size: 18px;
+  background-color: #2d333a;
+  color: white;
+  border: 2px #3e4449 outset;
+}
+
+#calculator #grid button.delete {
+  background-color: darkorange;
+  color: black;
+}
+
+#calculator #grid button.wide {
+  width: 111px;
+}
+
+#calculator #grid button:active {
+  border: 2px #3e4449 inset;
+}
+
+button,
+button:hover,
+button:active,
+button:visited {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+footer {
+  margin-top: 80px;
+}
+
+footer p {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+footer p a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+footer p a:visited {
+  color: white;
+}
