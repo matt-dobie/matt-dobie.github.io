@@ -1,0 +1,174 @@
+/*
+  Author: Matthew Dobie
+  Author URL: mattdobie.com
+  Description: CSS for simple Tic-Tac-Toe Game
+*/
+
+// General body style
+body {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  font-size: 40px;
+}
+
+// Button style
+button {
+  border: none;
+  outline: none;
+  background-color: white;
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  opacity: 0.7;
+  border-radius: 20px;
+  border: solid 2px transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+    border: dashed 2px #222;
+  }
+}
+
+// Navigation style
+.navigate {
+  display: block;
+  .back, .refresh {
+    cursor: pointer;
+    opacity: 0.3;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+// Intro view style
+.intro {
+  margin-top: 120px;
+  opacity: 0;
+  h1 {
+    font-size: 40px;
+  }
+}
+
+// Player choice view style
+.player-choice {
+  opacity: 0;
+  margin: 100px auto;
+  p {
+    margin: 30px;
+  }
+}
+
+// Mark/Difficulty view style
+.mark-choice, .difficulty-choice {
+  margin: 100px auto;
+  padding: 0 20px;
+  button {
+    width: 100px;
+    &.diff {
+      font-size: 18px;
+    }
+    &.mark {
+      font-size: 60px;
+      font-family: "Indie Flower", cursive;
+      padding: 0;
+    }
+  }
+  .navigate {
+    margin: 40px auto;
+  }
+}
+
+.mark-choice {
+  margin: 60px auto;
+}
+
+// Upper display style
+.display {
+  margin: 50px auto 10px;
+  padding: 0 20px;
+  font-size: 25px;
+}
+
+// Grid style
+.grid {
+  display: table;
+  margin: 30px auto 20px;
+  .row {
+    display: table-row;
+    .cell {
+      width: 80px;
+      height: 80px;
+      display: table-cell;
+      padding: 0;
+      font-size: 55px;
+      cursor: pointer;
+      &:hover {
+        background-color: #eee;
+        &.used {
+          background-color: white;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+
+#cell0, #cell1, #cell2, #cell3, #cell4, #cell5 {
+  border-bottom: solid 4px black;
+}
+
+#cell0, #cell1, #cell3, #cell4, #cell6, #cell7 {
+  border-right: solid 4px black;
+}
+
+.refresh-display {
+  margin: 0 auto;
+  .navigate {
+    display: inline-block;
+    margin: 30px;
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 5px;
+  background-color: white;
+  font-size: 14px;
+  a {
+    text-decoration: none;
+    &:visited {
+      color: black;
+    }
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) {
+  .intro {
+    margin-top: 150px;
+    h1 {
+      font-size: 70px;
+    }
+  }
+
+  .player-choice, .difficulty-choice {
+    margin-top: 170px;
+  }
+
+  .mark-choice {
+    margin-top: 140px;
+  }
+
+  .display {
+    margin-top: 70px;
+  }
+}

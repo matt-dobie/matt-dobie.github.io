@@ -522,6 +522,10 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
   font-size: 3em;
 }
 
+.portfolio-modal .modal-content hr {
+  margin: 60px;
+}
+
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
 }
